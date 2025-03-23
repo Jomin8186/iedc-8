@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="question">
+            <p class="qn"><a href="https://chat.whatsapp.com/LCeGLigrGBqHrgY4NSr6lu" target="_blank">Join this WhatsApp group</a></p>
+            <p id="message"></p>
+        </div>
+    </div>
+
+    <script>
+        const correctAnswer = "google";
+
+        function submitAnswer() {
+            const userInput = document.getElementById('ans');
+            const messageBox = document.getElementById('message');
+            let userAns = userInput.value.trim().toLowerCase();
+
+            if (userAns === correctAnswer) {
+                messageBox.innerHTML = `✅ Correct! <a href="https://chat.whatsapp.com/LCeGLigrGBqHrgY4NSr6lu" target="_blank">Join this WhatsApp group</a>`;
+                messageBox.style.color = "green";
+            } else {
+                messageBox.innerHTML = "❌ Wrong answer! Try again.";
+                messageBox.style.color = "red";
+                userInput.value = ""; // Clear the input for retry
+            }
+        }
+    </script>
+</body>
+</html>

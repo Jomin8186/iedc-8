@@ -1,0 +1,68 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:Poppins;
+}
+.container{
+    background: url('bootcamp.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:fixed;
+    width:100%;
+    filter: brightness(0.9);
+    display: flex;
+    height:110vh;
+    justify-content: center;
+    align-items: center;
+}
+.question{
+    text-align: center;
+    display: flex;
+    color:#232118;
+    flex-direction: column;
+    background:linear-gradient(45deg,rgb(130, 87, 87),#ffe79e);
+    align-items: center;
+    max-width: 500px;
+    height:250px;
+    justify-content: space-evenly;
+    border-radius:8px;
+    margin:10px;
+    padding:0 25px;
+}
+.qn{
+    display: flex;
+    margin:0;
+    font-size:1.3rem;
+}
+.ans-sec{
+    display: flex;
+    border:none;
+}
+input{
+    border:none;
+    padding:12px 10px;
+    font-size: 1.1rem;
+    background-color: rgb(219, 216, 216);
+    color:black;    
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+button{
+    border:none;
+    background-color:white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 1rem;
+    padding:0 10px;
+    transition: 0.4s;
+}
+button:hover{
+    color:White;
+    background-color:rgb(49, 49, 49);
+    cursor:pointer;
+}
+.img{
+    width:40px;
+}
